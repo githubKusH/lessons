@@ -1,0 +1,50 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+.header__blok h1 {
+	color:brown;
+
+}
+.header__blok h2 {
+	color: blueviolet;
+}
+#header li{
+	color: darkorange;
+}
+h3 {
+	color: green;
+}
+.kitchen-blok p {
+	color:blue;
+}
+.dishes-blok li {
+	color: indigo;
+}
+.dishes-blok span,a {
+	color: crimson;
+}
+.kitchen-blok ~ p {
+	color: chocolate;
+}
+.history-blok +p{
+	color: darkslateblue;
+}
+.history-blok *{
+	color: rgb(120, 27, 27);
+}
+.history-blok > p{
+	color:orangered;
+}
+.history-blok span {
+	color: turquoise;
+}
+.text__hystory ~ p{
+	color: darkblue;
+}
+[class*="text"]{
+	color: crimson;
+}
+.traditions__blok , 
+.research__blok {
+	color:forestgreen;
+}
