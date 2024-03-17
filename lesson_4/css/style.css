@@ -1,0 +1,94 @@
+/* Підключення шрифтів */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url(reset.css);
+
+/* тренувальний полігон */
+.blok__traditions h1 {
+	font-family: "Pacifico", fantasy;
+	font-weight: 400;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: brown;
+	text-shadow: 3px 3px 3px #2d2b2bbe;
+	text-align: center;
+	word-spacing: 20px;
+}
+.section-1 {
+	font-family: "Hind", serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.3889; /* 25/18 */
+	text-align: left;
+	text-decoration: underline;
+	text-decoration-color: chocolate;
+}
+.section-2 {
+	font-family: "SourceCodePro", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: rgba(2, 100, 2, 0.863);
+	text-align: right;
+}
+.section-2 span {
+	font-weight: 700;
+	letter-spacing: 15px;
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+.section-3 {
+	font-size: 25px;
+	font-style: italic;
+	text-align: center;
+}
+.section-3 span {
+	font-weight: 900;
+	color: rgba(255, 0, 0, 0.767);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-shadow: -3px -3px 6px #2b2929;
+	
+}
+.section-4 {
+	font-family: "SourceCodePro", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: darkblue;
+}
+.section-5 {
+	font-size: 25px;
+	text-align: center;
+	text-transform: lowercase;
+}
+.section-5 span {
+	font-style: italic;
+	color: blueviolet;
+}
+/* верстка з макету */
+.container {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	color: #2b2929;
+}
+.section {
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.875; /* 30/16 */
+}
+.section h2 {
+	font-size: 40px;
+	line-height: 1.2; /* 48/40 */
+}
+.bed-selection h2 {
+	text-align: center;
+}
+.room-design h3 {
+	font-size: 20px;
+	line-height: 1.4; /* 28/20 */
+}
+.scroll-to-top{
+	font-size: 30px;
+	color: brown;
+}

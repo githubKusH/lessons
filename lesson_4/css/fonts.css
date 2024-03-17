@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind:regular,500,600,700&display=swap");
+/* локальне підключення шрифту */
+@font-face {
+	font-family: "SourceCodePro";
+	src: url(../fonts/SourceCodePro-Light.woff2);
+	src: url(../fonts/SourceCodePro-Light.woff);
+	font-display: swap;
+	font-weight: 300;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family:"SourceCodePro" ;
+	src: url(../fonts/SourceCodePro-Bold.woff2);
+	src: url(../fonts/SourceCodePro-Bold.woff);
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url(../fonts/ProximaNova-Regular.woff);
+	src: url(../fonts/ProximaNova-Regular.woff2);
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
