@@ -21,8 +21,8 @@
 
 @font-face {
 	font-family: "ProximaNova";
-	src: url(../fonts/ProximaNova-Regular.woff);
 	src: url(../fonts/ProximaNova-Regular.woff2);
+	src: url(../fonts/ProximaNova-Regular.woff);
 	font-display: swap;
 	font-weight: 400;
 	font-style: normal;
