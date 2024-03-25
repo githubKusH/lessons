@@ -6,11 +6,10 @@
 
 body {
 	font-family: "ProximaNova", sans-serif;
-	font-weight: 400;
 	color: #2b2929;
 }
 .list-navigation{
-	max-width: 1070px;
+	max-width: 1000px;
 	font-size: 30px;
 	font-weight: 600;
 	color: red;
