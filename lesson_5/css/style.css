@@ -35,6 +35,7 @@ body {
 	margin-bottom: 40px;
 }
 .image-room {
+	max-width: 100%;
 	margin-bottom: 40px;
 }
 .subtitle-design {
