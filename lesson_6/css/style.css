@@ -1,0 +1,255 @@
+/* Підключення шрифтів */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url(reset.css);
+
+.header-section {
+	border: 2px dotted rgb(248, 209, 54);
+	background: #9a9fa3;
+	padding: 50px;
+}
+
+.header-content {
+	font-family: "Roboto";
+	font-weight: 700;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 20px;
+	border-left: 3px solid rgb(216, 17, 17);
+	border-right: 3px dashed rgb(8, 8, 186);
+	border-top: 3px solid darkgreen;
+	border-bottom: 8px double darkmagenta;
+	background: linear-gradient(21deg, rgb(41, 31, 223) 0%, rgba(218, 227, 64, 1) 35%, rgba(0, 212, 255, 1) 100%);
+	box-shadow: 15px 15px 50px #0f1a05;
+}
+
+.butoon-1 {
+	border-block: 4px solid;
+	border-inline: 2px dashed red;
+	padding: 20px;
+	background: #888888;
+}
+
+.butoon-1 span {
+	font-size: 30px;
+}
+
+.butoon-2 {
+	margin-left: 20px;
+	padding: 15px;
+	outline: 6px double #c933e3;
+	border: 5px solid;
+	border-radius: 53% 47% 0% 100% / 64% 100% 0% 36%;
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 3%, rgba(97, 90, 225, 1) 16%, rgba(252, 70, 107, 1) 100%);
+}
+
+.butoon-3 {
+	margin-left: 40px;
+	padding: 30px 10px;
+	border-radius: 50%;
+	background: rgb(243, 167, 15);
+	box-shadow: 5px 5px 40px #a40808;
+}
+
+.background {
+	max-width: 1000px;
+	min-height: 500px;
+	background:
+		linear-gradient(55.95deg, rgba(242, 255, 0, 0.779) 0%, rgba(215, 79, 0, 0.3) 100%),
+		url("../img/practik-face.jpg") no-repeat 50% 85% / 200px,
+		url("../img/practik.jpg") no-repeat right top / 300px;
+	border-radius: 30px;
+}
+
+/* Krovato */
+.article {
+	font-family: "ProximaNova", sans-serif;
+	line-height: 1.875; /* 30/16 */
+	color: #2b2929;
+	max-width: 1070px;
+	margin: 0 auto;
+}
+
+.title-design {
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+
+.image-room {
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+.text-room {
+	margin-bottom: 40px;
+}
+
+.text-room p {
+	margin-bottom: 10px;
+}
+
+.subtitle-design {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.4; /* 28/20 */
+	margin-bottom: 30px;
+}
+
+.list-desing {
+	margin-bottom: 40px;
+}
+
+.list-desing li {
+	background: url("../img/mark.png") 0 0 no-repeat;
+	min-height: 32px;
+	padding-left: 47px;
+	margin-bottom: 20px;
+}
+
+/* Explore */
+.section-explore {
+	font-family: "Quicksand", sans-serif;
+	min-height: 530px;
+	background: url("../img/background-fonts.png") 0 0 repeat;
+}
+
+.content-explore {
+	font-size: 0;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 80px;
+	background: url("../img/alphabet-patterns.png") 350px -30px no-repeat;
+}
+
+.subtitle-explorer {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 24px;
+}
+
+.text-container {
+	display: inline-block;
+	max-width: 600px;
+	color: #fff;
+	margin-top: 121px;
+	margin-right: 133px;
+}
+
+.text-container p {
+	margin-bottom: 24px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+.button-explore {
+	background: #fff;
+	padding: 11px 20px;
+	border-radius: 8px;
+}
+
+.button-explore span {
+	background: url("../img/button-label.png") 0 0 no-repeat;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5625; /* 25/16 */
+	color: #0d1216;
+	padding-left: 22px;
+}
+
+.image-explore {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 547px;
+}
+
+/* Coral */
+.section-coral {
+	font-family: "Roboto";
+	min-height: 847px;
+	background:
+		url("../img/decor-left.png") 0 85% no-repeat,
+		url("../img/decor-right.png") 100% 70% no-repeat,
+		rgba(30, 40, 50, 0.05);
+}
+.content-coral {
+	max-width: 1226px;
+	font-size: 0;
+	margin: 0 auto;
+	padding-top: 245px;
+}
+
+.text-coral {
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: #000;
+	max-width: 686px;
+	padding-top: 54px;
+	margin-bottom: 184px;
+}
+
+.subtitle-coral {
+	font-weight: 300;
+	font-size: 74px;
+	margin-bottom: 52px;
+}
+
+.content-coral p {
+	font-size: 30px;
+	line-height: 1.83;
+	margin-bottom: 66px;
+}
+
+.button-coral {
+	background: #1e2832;
+	padding: 19px 26px;
+}
+
+.button-coral span {
+	font-size: 29px;
+	color: #fff;
+	background: url("../img/top-icon-button.png") 0 0 no-repeat;
+	padding-left: 34px;
+}
+
+.image-coral {
+	margin-left: 116px;
+	display: inline-block;
+	max-width: 424px;
+	width: 100%;
+	height: 542px;
+	border: 3px solid #b5b4b496;
+	border-radius: 160px 0;
+	vertical-align: top;
+}
+
+.image-coral img {
+	width: 100%;
+	height: 542px;
+	margin-left: -18px;
+	margin-top: -20px;
+}
+
+/* footer */
+.button-top {
+	display: block;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+
+.button-top a {
+	background: #c0c0c0;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgb(11, 0, 15);
+	margin-bottom: 20px;
+}
+
+.button-top span {
+	text-transform: uppercase;
+	font-size: 30px;
+}
