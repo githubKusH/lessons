@@ -135,7 +135,7 @@
 	display: inline-block;
 	max-width: 600px;
 	color: #fff;
-	margin-top: 121px;
+	padding-top: 121px;
 	margin-right: 133px;
 }
 
@@ -191,6 +191,7 @@
 	max-width: 686px;
 	padding-top: 54px;
 	margin-bottom: 184px;
+	margin-right: 116px;
 }
 
 .subtitle-coral {
@@ -218,7 +219,6 @@
 }
 
 .image-coral {
-	margin-left: 116px;
 	display: inline-block;
 	max-width: 424px;
 	width: 100%;
