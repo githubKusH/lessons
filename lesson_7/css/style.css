@@ -198,9 +198,9 @@ main {
 }
 
 .image-bacgraund {
-	max-width: auto;
+	max-width: 100%;
 	min-height: 40px;
-	background-color: rgb(20, 219, 186);
+	background-color: rgb(165, 221, 186);
 }
 
 .no-margin-buttom > *:last-child {
