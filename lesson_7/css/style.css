@@ -8,22 +8,25 @@
 	max-width: 1070px;
 	margin: 0 auto;
 	padding-top: 20px;
+	text-align: center;
 }
 
 .button-poligon {
+	display: inline-block;
 	background: linear-gradient(174deg, rgba(63, 94, 251, 1) 0%, rgba(254, 255, 22, 1) 100%);
-	box-shadow: 0 10px 2px;
-	padding: 10px;
+	box-shadow: 1px 8px 2px;
+	padding: 10px 20px;
 	border-radius: 10px;
-	margin: 0 auto;
 }
 
 .button-poligon span {
 	font-size: 30px;
 }
+
 .button-poligon:hover {
 	background: forestgreen;
 }
+
 .button-poligon:active {
 	box-shadow: 0 3px 2px;
 }
@@ -238,16 +241,13 @@ main {
 }
 
 .button-game {
-	max-width: 200px;
-	display:block;
+	display: block;
 	padding: 10px;
 	background: rgb(88, 221, 88);
 	border-radius: 10px;
 	box-shadow: 0px 6px 2px black;
+	margin-bottom: 20px;
 	text-align: center;
-	margin: 0 auto;
-	
-
 }
 
 .button-game span {
@@ -277,7 +277,7 @@ main {
 
 .subtitle-game {
 	font-size: 30px;
-	text-align: center;
+
 }
 
 .button-exit-game {
@@ -364,7 +364,7 @@ main {
 	background: rgb(243, 200, 6) url("../img/finish-game.png") 0 0/50px;
 }
 
-[class*="line-game"]:not(.line-game-1) {
+[class*="line-game"]:not(.line-game-1){
 	visibility: hidden;
 }
 
@@ -381,6 +381,7 @@ main {
 .line-game-7:hover + .line-game-8 {
 	visibility: visible;
 }
+
 
 /* About me */
 .blok-about {
@@ -450,7 +451,6 @@ main {
 	border-radius: 50%;
 	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 100%);
 	margin-left: 60px;
-	
 }
 
 .contacts-about {
@@ -553,4 +553,35 @@ main {
 .list-design p {
 	display: inline-block;
 	font-size: 16px;
+}
+
+/* footer */
+.blok-footer {
+	max-width: 1000px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+.button-up {
+	display: inline-block;
+	margin: 0 auto;
+	background: darkgreen;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 1px 5px 2px rgb(0, 0, 0);
+}
+
+.button-up span {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.button-up:hover {
+	background: darkgoldenrod;
+}
+
+.button-up:active {
+	box-shadow: 1px 1px 2px rgb(0, 0, 0);
+	color: blue;
 }
