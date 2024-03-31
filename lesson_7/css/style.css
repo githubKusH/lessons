@@ -1,0 +1,556 @@
+/* Підключення шрифтів */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url(reset.css);
+
+.header {
+	max-width: 1070px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.button-poligon {
+	background: linear-gradient(174deg, rgba(63, 94, 251, 1) 0%, rgba(254, 255, 22, 1) 100%);
+	box-shadow: 0 10px 2px;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.button-poligon span {
+	font-size: 30px;
+}
+.button-poligon:hover {
+	background: forestgreen;
+}
+.button-poligon:active {
+	box-shadow: 0 3px 2px;
+}
+
+main {
+	padding-top: 50px;
+}
+/* полігон */
+.blok-poligon {
+	display: none;
+	max-width: 1070px;
+	margin: 0 auto;
+	border: 1px solid;
+}
+.blok-poligon:target {
+	display: block;
+}
+
+/* hover */
+.link {
+	padding: 30px;
+	color: blueviolet;
+	background-color: aqua;
+	border-radius: 20px;
+}
+.link:hover {
+	background: forestgreen;
+}
+
+.link span {
+	font-size: 30px;
+}
+
+.link:hover span {
+	color: rgb(243, 181, 11);
+	text-transform: uppercase;
+}
+
+.text {
+	display: inline-block;
+	font-size: 30px;
+	max-width: 400px;
+	background: darkorchid;
+}
+
+.text:hover {
+	background: darkgoldenrod;
+	border-radius: 50%;
+}
+
+/* visibility */
+.visibility {
+	display: inline-block;
+	max-width: 400px;
+}
+
+.link-visibility {
+	padding: 20px;
+	background: forestgreen;
+	border-radius: 10px 10px 40px 40px;
+}
+
+.link-visibility span {
+	font-size: 30px;
+}
+
+.link-visibility + p {
+	font-size: 30px;
+	visibility: hidden;
+	/* display: none; */
+}
+
+.link-visibility:hover {
+	color: chocolate;
+	background-color: darkred;
+}
+
+.link-visibility:hover + p {
+	visibility: visible;
+	/* display: block; */
+}
+
+/* active */
+.link-activ {
+	max-width: 300px;
+	padding: 30px;
+	background: chocolate;
+	border-radius: 30px;
+}
+
+.link-activ span {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.link-activ:hover {
+	background: darkslateblue;
+}
+
+.link-activ:active span {
+	color: brown;
+}
+
+.link-focus {
+	padding: 20px;
+	background: rgb(149, 240, 4);
+	border-radius: 50%;
+}
+.link-focus span {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.focus:focus {
+	outline: 2px dashed red;
+}
+
+.tab:focus-visible {
+	outline: 2px solid orangered;
+}
+
+/* choise */
+.blok-text-choice {
+	max-width: 1000px;
+	border: 5px solid;
+}
+
+.blok-text-choice p:not(:last-child) {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.blok-text-choice p:last-child {
+	color: blue;
+}
+
+.blok-text-choice p:first-child {
+	text-transform: uppercase;
+	color: rgb(233, 42, 9);
+}
+
+.blok-text-choice p:nth-child(3) {
+	color: rgb(9, 255, 0);
+}
+
+.blok-text-choice p:nth-child(even) {
+	color: deeppink;
+}
+/* нульовий відступ незалежно від перестановки контенту в блоці */
+.no-margin-buttom > * {
+	margin-bottom: 20px;
+}
+
+.no-margin-buttom {
+	max-width: 500px;
+	background: darkorange;
+}
+
+.no-margin-buttom h2 {
+	font-size: 30px;
+}
+
+.no-margin-buttom p {
+	font-size: 20px;
+	color: blue;
+}
+
+.link-no-margin-buttom {
+	padding: 20px 40px;
+	border-radius: 10px;
+	background: green;
+}
+
+.image-bacgraund {
+	max-width: auto;
+	min-height: 40px;
+	background-color: rgb(20, 219, 186);
+}
+
+.no-margin-buttom > *:last-child {
+	margin-bottom: 0;
+}
+
+.button-close-poligon {
+	display: block;
+	max-width: 1070px;
+	padding: 10px 45%;
+	background: red;
+	border-radius: 50px;
+}
+
+.button-close-poligon span {
+	font-size: 30px;
+}
+
+/* Game */
+.blok-game {
+	font-family: "Roboto", sans-serif;
+	max-width: 1070px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+
+.title-game {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: 3px 2px 4px rgba(255, 0, 0, 0.671);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.button-game {
+	max-width: 200px;
+	display:block;
+	padding: 10px;
+	background: rgb(88, 221, 88);
+	border-radius: 10px;
+	box-shadow: 0px 6px 2px black;
+	text-align: center;
+	margin: 0 auto;
+	
+
+}
+
+.button-game span {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.button-game:hover {
+	background-color: blueviolet;
+}
+
+.button-game:active {
+	box-shadow: 0px 3px 2px black;
+}
+
+.game-window {
+	display: none;
+	min-height: 600px;
+	padding: 20px;
+	background: green;
+	font-size: 0;
+}
+
+.game-window:target {
+	display: block;
+}
+
+.subtitle-game {
+	font-size: 30px;
+	text-align: center;
+}
+
+.button-exit-game {
+	display: block;
+	padding: 10px;
+	background: rgb(88, 221, 88);
+	border-radius: 10px;
+	box-shadow: 0px 6px 2px black;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.button-exit-game:hover {
+	background-color: blueviolet;
+}
+
+.button-exit-game:active {
+	box-shadow: 0px 3px 2px black;
+}
+
+.button-exit-game span {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.line-game-1 {
+	width: 50px;
+	height: 50px;
+	background: url("../img/home-game.svg") 0 0/50px no-repeat;
+}
+
+.line-game-2 {
+	width: 20px;
+	height: 200px;
+	background: red;
+	margin-left: 15px;
+}
+
+.line-game-3 {
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+	background: red;
+	margin-left: 15px;
+	vertical-align: top;
+}
+
+.line-game-4 {
+	display: inline-block;
+	width: 20px;
+	height: 150px;
+	background: red;
+	vertical-align: top;
+}
+
+.line-game-5 {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	background: red;
+	vertical-align: bottom;
+}
+
+.line-game-6 {
+	display: inline-block;
+	width: 20px;
+	height: 150px;
+	background: red;
+	vertical-align: bottom;
+}
+
+.line-game-7 {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	background: red;
+	vertical-align: top;
+}
+
+.line-game-8 {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: rgb(243, 200, 6) url("../img/finish-game.png") 0 0/50px;
+}
+
+[class*="line-game"]:not(.line-game-1) {
+	visibility: hidden;
+}
+
+[class*="line-game"]:not(.line-game-1):hover {
+	visibility: visible;
+}
+
+.line-game-1:hover + .line-game-2,
+.line-game-2:hover + .line-game-3,
+.line-game-3:hover + .line-game-4,
+.line-game-4:hover + .line-game-5,
+.line-game-5:hover + .line-game-6,
+.line-game-6:hover + .line-game-7,
+.line-game-7:hover + .line-game-8 {
+	visibility: visible;
+}
+
+/* About me */
+.blok-about {
+	background: url("../img/about-section.png") 0 0/ 100% 100% no-repeat;
+	padding: 120px 0;
+}
+
+.content-about {
+	max-width: 1150px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.text-about {
+	font-family: "Exo", sans-serif;
+	max-width: 992px;
+	text-align: center;
+	margin: 0 auto 60px;
+}
+
+.text-about h2 {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 1.17;
+	text-transform: uppercase;
+}
+
+.text-about h2::after {
+	display: block;
+	content: "";
+	width: 40%;
+	height: 1px;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 100%);
+	margin: 20px auto;
+}
+
+.text-about p {
+	font-size: 18px;
+	line-height: 2.2; /* 40/18 */
+	letter-spacing: -0.02em;
+	text-transform: capitalize;
+}
+
+.blok-list-about {
+	font-size: 0;
+	font-family: "Orbitron", sans-serif;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+
+.list-about li {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1.25; /* 25/20 */
+	text-transform: capitalize;
+}
+
+.list-about li:not(:last-child) {
+	margin-right: 60px;
+}
+
+.list-about li::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 100%);
+	margin-left: 60px;
+	
+}
+
+.contacts-about {
+	font-size: 0;
+	font-family: "Exo", sans-serif;
+	max-width: 932px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.contacts-about a {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: -1px;
+	margin-right: 80px;
+}
+
+.contacts-about a:last-child {
+	margin-right: 0;
+}
+
+.link-tel-about {
+	background: url("../img/call.svg") 0 0/ 20px no-repeat;
+	padding-left: 40px;
+}
+
+.link-maps-about {
+	text-transform: capitalize;
+	background: url("../img/location.svg") 0 0/ 20px no-repeat;
+	padding-left: 40px;
+}
+
+.link-mail-about {
+	text-transform: lowercase;
+	background: url("../img/email.svg") 0 0/ 20px no-repeat;
+	padding-left: 40px;
+}
+
+.contacts-about a:hover {
+	text-decoration: underline;
+}
+
+/* Krovato */
+.article {
+	font-family: "ProximaNova", sans-serif;
+	line-height: 1.875; /* 30/16 */
+	color: #2b2929;
+	max-width: 1070px;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+
+.title-design {
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+
+.image-room {
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+.text-room {
+	margin-bottom: 40px;
+}
+
+.text-room p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.subtitle-design {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.4; /* 28/20 */
+	margin-bottom: 30px;
+}
+
+.list-design {
+	padding-left: 47px;
+	margin-bottom: 40px;
+	font-size: 0;
+}
+
+.list-design li::before {
+	content: "";
+	background: url("../img/mark.svg") 0 0/ 100% no-repeat;
+	width: 32px;
+	height: 32px;
+	vertical-align: top;
+	margin-right: 15px;
+	margin-left: -47px;
+}
+
+.list-design li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.list-design p {
+	display: inline-block;
+	font-size: 16px;
+}
