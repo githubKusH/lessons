@@ -1,0 +1,100 @@
+/* Підключення шрифтів */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url(reset.css);
+
+body {
+	background: rgb(34, 193, 195);
+	background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(181, 195, 34, 0.9668242296918768) 100%);
+}
+
+h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.section-image-poligon {
+	max-width: 1300px;
+	min-height: 400px;
+	margin: 0 auto;
+}
+
+.content-image-poligon img {
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+
+.content-image-poligon span,
+li {
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.content-image-poligon li {
+	min-height: 50px;
+	padding-left: 100px;
+	margin-bottom: 20px;
+}
+
+.content-image-poligon li:first-child::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: url("../img/icon/arrowdown.svg") 0 0/ 50px no-repeat;
+	vertical-align: middle;
+}
+
+.content-image-poligon li:nth-child(2)::before {
+	content: "";
+	background: url("../img/icon/arrowup.svg") 0 0/ 50px no-repeat;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.content-image-poligon li:nth-child(3)::before {
+	content: "";
+	background: url("../img/icon/question.svg") 0 0/ 50px no-repeat;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.image-heand {
+	width: 300px;
+}
+
+.content-image-poligon span:hover,
+li:hover {
+	font-size: 25px;
+	font-weight: 700;
+	text-decoration: underline;
+	color: rgb(185, 11, 177);
+}
+
+.content-image-poligon img:hover:not(.image-heand) {
+	width: 200px;
+	margin-bottom: 50px;
+}
+
+.image-heand:hover {
+	width: 500px;
+}
+
+footer {
+	max-width: 1000px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button-up {
+	background: darkgreen;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 1px 5px 2px rgb(0, 0, 0);
+}
