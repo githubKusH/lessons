@@ -12,7 +12,6 @@
 }
 
 .button-poligon {
-	display: inline-block;
 	background: linear-gradient(174deg, rgba(63, 94, 251, 1) 0%, rgba(254, 255, 22, 1) 100%);
 	box-shadow: 1px 8px 2px;
 	padding: 10px 20px;
@@ -564,8 +563,6 @@ main {
 	text-align: center;
 }
 .button-up {
-	display: inline-block;
-	margin: 0 auto;
 	background: darkgreen;
 	border-radius: 20px;
 	padding: 20px;
