@@ -1,0 +1,317 @@
+/* Підключення шрифтів */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url(reset.css);
+body {
+	font-family: "ProximaNova", sans-serif;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.header {
+}
+
+[class*="__container"] {
+	max-width: 1290px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+.header__container {
+}
+
+.header__logo {
+	width: 100%;
+	width: 250px;
+	height: 50px;
+	margin-right: 34px;
+}
+
+.header__button {
+	padding: 11px 20px;
+	border-radius: 8px;
+	background: #ffbc57;
+}
+
+.header__button span {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.2; /* 24/19 */
+	text-transform: capitalize;
+}
+
+.header__button::before {
+	content: "";
+	background: url("../img/menu-icon/menu-catalog.svg") 0 0 / 100% no-repeat;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	vertical-align: sub;
+}
+
+.header__button:hover::before {
+	background: url("../img/menu-icon/close.svg") 0 0 / 100% no-repeat;
+}
+.header__button:active{
+	background: #2b2929;
+}
+
+.header__katalog {
+	position: absolute;
+	top: 100px;
+	z-index: 50;
+	display: none;
+	/* ? або hover */
+	/* opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 0.3s ease,
+		visibility 0.3s ease; */
+}
+
+.header__katalog:target {
+	display: block;
+}
+/* ? або hover з переміщенням меню до кнопки */
+/* .header__button:hover + .header__katalog,
+.header__button + .header__katalog:hover {
+	opacity: 1;
+	visibility: visible;
+} */
+
+.background-wrapper {
+	content: "";
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 98px;
+	left: 0;
+	background-color: rgba(27, 26, 26, 0.8);
+	backdrop-filter: blur(2.5px);
+	z-index: -1;
+}
+
+.menu {
+	padding: 8px 0;
+	border-radius: 8px;
+	background: #fff;
+	min-width: 300px;
+	position: relative;
+	z-index: 6;
+}
+.menu:hover {
+	border-radius: 8px 0px 0px 8px;
+}
+
+.menu__item {
+}
+
+.menu__link {
+	min-width: 100%;
+	padding: 10px 15px 10px 30px;
+	position: relative;
+}
+
+.menu__link::after {
+	content: "";
+	background: url("../img/menu-icon/arrow-menu.svg") 0 0 / 100%;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 16px;
+	right: 15px;
+}
+
+.menu__link:hover {
+	background: #ffbc57;
+	border-radius: 8px 0px 0px 8px;
+}
+
+.menu__link:hover::after {
+	content: "";
+	background: url("../img/menu-icon/arrow.svg") 0 0 /100%;
+	width: 24px;
+	height: 24px;
+}
+
+.menu__icon {
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+.menu__title {
+	color: #2b2929;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	/* ?для відштовхування іконки від тексту */
+	margin-right: 40px;
+}
+
+
+
+.sub-menu {
+	background: #fff;
+	border-radius: 0 8px 8px 0;
+	padding: 20px 0;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	min-width: 323px;
+	overflow-y: auto;
+	z-index: 6;
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 0.3s ease,
+		visibility 0.3s ease;
+}
+.menu__link:hover + .sub-menu,
+.sub-menu:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu::after {
+	content: "";
+	width: 5px;
+	min-height: 97%;
+	background: #ffbc57;
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
+
+.sub-menu__item {
+}
+
+.sub-menu__item:hover {
+	background: #ffbc57;
+}
+
+.sub-menu__link {
+	color: #2b2929;
+	font-size: 19px;
+	line-height: 2.1;
+	padding: 5px 0 5px 30px;
+}
+
+/* ! знаю що не так воно працює)) */
+/* .background-wrapper {
+	background: rgba(27, 26, 26, 0.80);
+	backdrop-filter: blur(2.5px);;
+	width: 1290px;
+	height: 1000px;
+	position: absolute;
+	top:-10px;
+	left:0;
+	z-index: 4;
+} */
+
+.page {
+	background: #f8f8f8;
+	font-size: 0;
+}
+
+.page__container {
+	position: relative;
+}
+
+.page__content {
+	color: #2b2929;
+	overflow: clip;
+	padding-bottom: 20px;
+}
+
+.page__popular-categories {
+}
+
+.popular-categories {
+	margin: 0 -5px;
+}
+
+.popular-categories__title {
+}
+
+.title {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+
+.popular-categories__card {
+}
+
+.categories-card {
+	display: inline-block;
+	width: 250px;
+	height: 300px;
+	background: #fff url("../img/main/top-categories/frame.webp") bottom / 100% no-repeat;
+	border-radius: 8px;
+	position: relative;
+	margin: 12px 5px;
+}
+
+.categories-card:nth-child(-n + 6) {
+	margin-top: 0;
+}
+
+.categories-card:nth-last-child(-n + 6) {
+	margin-bottom: 0;
+}
+
+.categories-card:hover {
+	box-shadow: 0px 10px 4px #ffbc57;
+}
+
+.categories-card:active {
+	box-shadow: 0px 3px 4px #ffbc57;
+}
+
+.categories-card__link::before {
+	content: "";
+	background: url("../img/main/arrow.svg") 0 0 /100% no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.categories-card__title,
+.categories-card__number {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.categories-card__title {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.categories-card__number {
+	text-align: right;
+	color: #b1b1b1;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.categories-card__image {
+	max-width: 250px;
+	max-height: 300px;
+	width: 100%;
+	height: 100%;
+}
