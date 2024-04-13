@@ -201,20 +201,8 @@ body {
 	color: #2b2929;
 	font-size: 19px;
 	line-height: 2.1;
-	padding: 5px 0 5px 30px;
+	padding: 5px 20px 5px 30px;
 }
-
-/* ! знаю що не так воно працює)) */
-/* .background-wrapper {
-	background: rgba(27, 26, 26, 0.80);
-	backdrop-filter: blur(2.5px);;
-	width: 1290px;
-	height: 1000px;
-	position: absolute;
-	top:-10px;
-	left:0;
-	z-index: 4;
-} */
 
 .page {
 	background: #f8f8f8;
