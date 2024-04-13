@@ -95,26 +95,30 @@ body {
 	backdrop-filter: blur(2.5px);
 	z-index: -1;
 }
+.header__items-katalog {
+	
+}
 
 .menu {
 	padding: 8px 0;
-	border-radius: 8px;
 	background: #fff;
+	border-radius: 8px;
 	min-width: 300px;
-	position: relative;
-	z-index: 6;
 }
+
 .menu:hover {
 	border-radius: 8px 0px 0px 8px;
 }
 
 .menu__item {
+	
 }
 
 .menu__link {
 	min-width: 100%;
 	padding: 10px 15px 10px 30px;
 	position: relative;
+	border-right: 5px solid #ffbc57;
 }
 
 .menu__link::after {
@@ -129,7 +133,6 @@ body {
 
 .menu__link:hover {
 	background: #ffbc57;
-	border-radius: 8px 0px 0px 8px;
 }
 
 .menu__link:hover::after {
@@ -168,27 +171,15 @@ body {
 	min-width: 323px;
 	overflow-y: auto;
 	z-index: 6;
-	opacity: 0;
-	visibility: hidden;
-	transition:
-		opacity 0.3s ease,
-		visibility 0.3s ease;
+	display: none;
+	
 }
 .menu__link:hover + .sub-menu,
 .sub-menu:hover {
-	visibility: visible;
-	opacity: 1;
+	display: block;
 }
 
-.menu::after {
-	content: "";
-	width: 5px;
-	min-height: 97%;
-	background: #ffbc57;
-	position: absolute;
-	top: 8px;
-	right: 0;
-}
+
 
 .sub-menu__item {
 }
@@ -202,6 +193,7 @@ body {
 	font-size: 19px;
 	line-height: 2.1;
 	padding: 5px 20px 5px 30px;
+	min-width: 100%;
 }
 
 .page {
@@ -216,15 +208,17 @@ body {
 .page__content {
 	color: #2b2929;
 	overflow: clip;
-	padding-bottom: 20px;
 }
 
 .page__popular-categories {
 }
 
-.popular-categories {
-	margin: 0 -5px;
+.popular-categories__items {
+	margin: -12px -5px;
+
 }
+
+.popular-categories {	}
 
 .popular-categories__title {
 }
@@ -247,15 +241,10 @@ body {
 	border-radius: 8px;
 	position: relative;
 	margin: 12px 5px;
+	overflow: hidden;
 }
 
-.categories-card:nth-child(-n + 6) {
-	margin-top: 0;
-}
 
-.categories-card:nth-last-child(-n + 6) {
-	margin-bottom: 0;
-}
 
 .categories-card:hover {
 	box-shadow: 0px 10px 4px #ffbc57;
@@ -287,6 +276,7 @@ body {
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	max-width: 70%;
 }
 
 .categories-card__number {
@@ -302,4 +292,10 @@ body {
 	max-height: 300px;
 	width: 100%;
 	height: 100%;
+}
+
+.footer{
+	background-color: #2b2929;
+	max-width: 100%;
+	min-height: 300px;
 }
