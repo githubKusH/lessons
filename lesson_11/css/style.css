@@ -17,7 +17,7 @@ body {
 .header__container {
 	max-width: 980px;
 	margin: 0 auto;
- overflow: hidden;
+ /* overflow: hidden; */ 
 }
 
 .content {
@@ -26,6 +26,7 @@ body {
 	text-align: center;
 }
 .content h2 {
+	padding-top: 20px;
 	max-width: 100%;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -117,7 +118,12 @@ main {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+.page__container {
+	max-width: 2000px;
+	margin: 0 auto;
+}
 .card {
+	padding-top: 20px;
 	
 	
 }
@@ -162,10 +168,20 @@ main {
 }
 
 /* Автомобіль */
+.car {
+	width: 2000px;
+	height: 800px;
+	padding-top: 50px;
+	background: url("../img/fon.webp") 0 0 / 100% 100% no-repeat;
+	position: relative;
+}
 .car__body {
 	width: 600px;
 	height: 400px;
-	position: relative;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+
 	
 }
 
@@ -289,21 +305,16 @@ main {
 .spring {
 	width: 150px;
 	height: 70px;
-	background: rgb(20, 19, 19);
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(46,46,46,0.98) 100%);
 	border-radius: 53% 23% 27% 49% / 84% 96% 10% 10% ;
 	position: absolute;
 	bottom: -4px;
 	left: 70px;
 }
  .spring--left {
-	width: 150px;
-	height: 70px;
-	background: rgb(20, 19, 19);
-	border-radius: 53% 23% 27% 49% / 84% 96% 10% 10% ;
 	position: absolute;
 	bottom: -4px;
 	left: -60px;
-	
  }
  .side__item-dor {}
  .dor {}
@@ -355,7 +366,7 @@ main {
 .dor__item-glass {
 	width: 150px;
 	height: 120px;
-	background: rgba(109, 108, 108, 0.959);
+	background: rgba(173, 170, 170, 0.959);
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -401,7 +412,7 @@ main {
 	content: "";
 	width: 15px;
 	height: 120px;
-	background: rgba(109, 108, 108, 0.959);
+	background: rgba(173, 170, 170, 0.959);
 	border: 1px solid;
 	border-radius: 5px 0 0 5px;
 	position: absolute;
@@ -427,13 +438,17 @@ main {
 	content: "";
 	width: 30px;
 	height: 40px;
-	background: rgb(241, 245, 188);
+	background: rgb(232, 236, 166);
 	border: 1px solid;
 	border-radius: 100% 56% 100% 54% / 100% 58% 100% 48% ;
 	position: absolute;
 	bottom: 20px;
 	right: 0px;
 }
+.front__motor:hover::after {
+	box-shadow: 10px 4px 50px yellow;
+}
+
 .front__motor::before {
 	content: "";
 	width: 30px;
@@ -446,6 +461,7 @@ main {
 	top: 15px;
 	left: 35px;
 }
+
 .front__bamper {
 	width: 25px;
 	height: 30px;
@@ -463,8 +479,8 @@ main {
 	width: 110px;
 	height: 110px;
 	border-radius: 50%;
-	border: 25px solid;
-	background: rgb(228, 213, 7);
+	border: 25px solid rgb(29, 28, 28);
+	background: radial-gradient(circle, rgba(255,250,0,1) 0%, rgba(239,245,2,0.98) 100%);
 	position: absolute;
 	bottom: 0px;
 	left: 120px;
@@ -473,6 +489,7 @@ main {
 .wheel--left{
 	left: 400px;
 }
+
 .wheel__element-1 {
 	width: 20px;
 	height: 20px;
