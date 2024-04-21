@@ -10,13 +10,13 @@
 @keyframes run-right-width {
 	0% {
 		transform: translateX(-100%) scale(-1, 1);
-		bottom: 35%;
+		bottom: 30%;
 		width: 150px;
 		height: 200px;
 	}
 	100% {
 		transform: translateX(1200%) scale(-1, 1);
-		bottom: 35%;
+		bottom: 30%;
 		width: 150px;
 		height: 200px;
 	}
@@ -25,13 +25,13 @@
 @keyframes run-left-width {
 	0% {
 		transform: translateX(1200%) scale(1, 1);
-		bottom: 35%;
+		bottom: 30%;
 		width: 150px;
 		height: 200px;
 	}
 	100% {
 		transform: translateX(0px) scale(1, 1);
-		bottom: 35%;
+		bottom: 30%;
 		width: 150px;
 		height: 200px;
 	}
