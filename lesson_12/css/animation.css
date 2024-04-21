@@ -1,14 +1,22 @@
 
+@keyframes go {
+	0% {
+		translate: 0px 0px;
+	}
+	100% {
+		translate: 2000px 0px;
+	}
+}
 @keyframes run-right-width {
 	0% {
-		translate: -100% 0px;
-		bottom: 30%;
+		transform: translateX(-100%) scale(-1, 1);
+		bottom: 35%;
 		width: 150px;
 		height: 200px;
 	}
 	100% {
-		translate: 1200% 0px;
-		bottom: 30%;
+		transform: translateX(1200%) scale(-1, 1);
+		bottom: 35%;
 		width: 150px;
 		height: 200px;
 	}
@@ -16,93 +24,69 @@
 
 @keyframes run-left-width {
 	0% {
-		translate: 1200% 0px;
-		transform: scale(1, 1);
-		bottom: 30%;
+		transform: translateX(1200%) scale(1, 1);
+		bottom: 35%;
 		width: 150px;
 		height: 200px;
 	}
 	100% {
-		translate: 0px 0px;
-		transform: scale(1, 1);
-		bottom: 30%;
+		transform: translateX(0px) scale(1, 1);
+		bottom: 35%;
 		width: 150px;
 		height: 200px;
 	}
 }
 
-
 @keyframes run-right {
 	0% {
-		translate: -100% 0px;
+		transform: translateX(-100%) scale(-1, 1);
 	}
 	100% {
-		translate: 1000% 0px;
+		transform: translateX(1000%) scale(-1, 1);
 	}
 }
 
 @keyframes run-left {
 	0% {
-		translate: 1000% 0px;
-		transform: scale(1, 1);
+		transform: translateX(1000%) scale(1, 1);
 	}
 	100% {
-		translate: 0px 0px;
-		transform: scale(1, 1);
+		transform: translateX(0px) scale(1, 1);
 	}
 }
 @keyframes end-zomby {
 	0% {
-		translate: 1000% 0px;
-		transform: scale(1, 1);
+		transform: translateX(1000%) scale(1, 1);
+		bottom: 0;
+	}
+	50% {
+		transform: translateX(1200px) scale(1, 1);
 		bottom: 0;
 	}
 	100% {
-		translate: 1200px 0px;
-		transform: scale(1, 1);
-		bottom: 0;
+		transform: translateX(1700px) scale(1, 1) rotate(270deg);
+		bottom: -15%;
 	}
-	
-}
-@keyframes end-zomby-rotate {
-	0% {
-		bottom: 100px;
-		rotate: 0deg;
-		z-index: 20;
-	}
-	100% {
-		translate: 1700px 0;
-		rotate: 270deg;
-		bottom: -150px;
-		z-index: 20;
-	}
-
 }
 
 @keyframes shegi-run {
 	0% {
-		translate: 0px 0px;
-	}
-	50% {
-		translate: 0px 0px;
+		transform: translateX(0px);
 		opacity: 1;
 	}
 	100% {
 		opacity: 1;
-		translate: -200% 0px;
+		transform: translateX(-200%);
 	}
 }
 @keyframes scoby-run {
 	0% {
-		translate: 0px 0px;
-	}
-	50% {
-		translate: 0px 0px;
+		transform: translateX(0px);
 		opacity: 1;
 	}
 	100% {
 		opacity: 1;
-		translate: 400% 0px;
+		transform: translateX(400%);
 	}
 }
 
@@ -117,10 +101,7 @@
 
 @keyframes men-run {
 	0% {
-		translate: 0px 0px;
-	}
-	50% {
-		translate: 0px 0px;
+		transform: translateX(0px);
 		opacity: 1;
 	}
 	100% {
@@ -135,77 +116,74 @@
 	}
 	100% {
 		background-size: 500px 900px;
-	background-position: -100% 0;
+		background-position: -100% 0;
 	}
 }
 @keyframes none-image {
 	0% {
-		display:none;
+		display: none;
 	}
 	100% {
-		display:none;
+		display: none;
 	}
 }
 @keyframes car-run {
 	0% {
-		translate: -100% 0px;
+		transform: translateX(-100%);
 	}
 	25% {
-		translate: 200% 0px;
-		
+		transform: translateX(200%);
 	}
 	50% {
-		translate: 0px 0px;
+		transform: translateX(0px);
 	}
 	100% {
-		translate: 152% 0px;
+		transform: translateX(75%);
 	}
 }
 @keyframes glass {
-	0%{
+	0% {
 		transform: translatey(0px);
 	}
-	50%{
+	50% {
 		transform: translatey(120px);
 	}
-	80%{
+	80% {
 		transform: translatey(120px);
-	 }
-	100%{
+	}
+	100% {
 		transform: translatey(0px);
 	}
 }
 @keyframes rotate {
 	0% {
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	50% {
 		bottom: 5px;
 	}
 	100% {
-		rotate: 360deg;
+		transform: rotate(360deg);
 	}
 }
 
 @keyframes light {
-	0%{
+	0% {
 		box-shadow: 30px 10px 50px rgb(226, 226, 10);
 	}
-	100%{
+	100% {
 		box-shadow: 30px 10px 50px rgb(226, 226, 10);
-		
 	}
 }
 
 @keyframes boom {
-	0%{
+	0% {
 		transform: scale(0);
 		opacity: 0.2;
+
 	}
-	100%{
+	100% {
 		transform: scale(20);
-		opacity: 0.6;
-		
-		
+		opacity: 0.9;
 	}
 }
