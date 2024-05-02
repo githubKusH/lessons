@@ -1,0 +1,627 @@
+/* Підключення шрифтів */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url(reset.css);
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1320px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+[class*="__button"]:hover {
+	transform: scale(1.2);
+}
+
+body {
+	font-family:"ProximaNova", sans-serif;
+	font-weight: 600;
+	color: #2b2929;
+	background-color: #f8f8f8;
+
+	
+}
+
+ img {
+	width: 100%;
+}
+
+
+
+/* =================header================================= */
+.header {
+}
+
+.header__top {
+	padding: 15px 0px;
+}
+
+.header__container {
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.header__content--wrap {
+	flex-wrap: wrap;
+}
+
+/* Інформаційна навігаці */
+.header__info-nav {
+	display: flex;
+	column-gap: 20px;
+	flex-basis: 70%;
+	flex-wrap: wrap;
+	margin-right: 10px;
+}
+
+.nav {
+
+}
+
+.nav__item {
+	overflow: hidden;
+	transition-duration: 0.3s;
+	flex-wrap: wrap;
+	display: inline-flex;
+	
+}
+
+.nav__link {
+	color: #535353;
+	font-weight: 400;
+	line-height: 1.87; /* 30/16 */
+	transition-duration: 0.3s;
+}
+
+.nav__link:hover {
+	color: #ffbc57;
+	text-decoration: underline;
+}
+
+.nav__link::first-letter {
+	text-transform: uppercase;
+}
+
+/* Месенджери */
+.header__help-messenger {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.header__help-messenger p {
+	color: #535353;
+	font-weight: 400;
+	line-height: 1.87; /* 30/16 */
+}
+
+.header__help-nav {
+	display:flex;
+	column-gap: 10px;
+}
+
+.nav__item--border-radius {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.nav__item--hover-scale:hover {
+	transform: scale(1.2);
+}
+
+/* Вибір мови */
+.header__language-dropdown {
+}
+
+.dropdown {
+	display: inline-flex;
+	color: #535353;
+}
+
+.dropdown__list {
+}
+
+.dropdown__item {
+	font-size: 19px;
+	line-height: 1.26;
+}
+
+.dropdown__link {
+	
+}
+
+.arow-button {
+	width: 24px;
+	height: 24px;
+	transition-duration:0.3s;
+}
+
+.arow-button:hover {
+	transform: rotate(180deg);
+}
+
+.header__midle {
+	padding: 25px 0;
+	background: #fff;
+	border-bottom: 2px solid #f8f8f8;
+
+}
+
+/* Логотип */
+.header__title-logo {
+}
+
+.header__link-logo {
+	width: 250px;
+	height: 50px;
+	flex-shrink: 0;
+}
+
+/* Кнопка каталогу */
+.header__katalog-button {
+	display: inline-flex;
+	padding: 11px 20px;
+	column-gap: 10px;
+	border-radius: 8px;
+	background: #ffbc57;
+	flex-shrink: 0;
+	transition-duration: 0.3s;
+}
+
+.header__katalog-button:hover {
+	background: #e7ab50;
+}
+
+.header__text-button {
+	color: #fff;
+	font-size: 19px;
+	line-height: 1.26; /* 24/19 */
+}
+
+.header__text-button::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../img/header/icon/menu-catalog.svg") 0 0 /100% 100% no-repeat;
+	vertical-align: sub;
+}
+
+/* Пошук товару */
+.header__search {
+	width: 421px;
+	height: 50px;
+	color: #b1b1b1;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.87; /* 30/16 */
+	padding: 0px 15px;
+	border-radius: 8px;
+	border: 1px solid #b1b1b1;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__button-search {
+	width: 24px;
+	height: 24px;
+	transition-duration: 0.3s;
+}
+
+/* Контакти */
+.header__contacts {
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+}
+
+.contacts {
+}
+
+.contacts__button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition-duration: 0.3s;
+}
+
+.contacts__dropdown {
+	flex-direction: column;
+}
+
+.dropdown__text {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 1.69; /* 22/13 */
+}
+.dropdown__link--big-dark {
+	color: #2b2929;
+	font-size: 20px;
+	line-height: 1.4; /* 28/20 */
+}
+
+/* Кнопки покупок */
+.header__purchase-buttons {
+	gap: 20px;
+}
+
+.purchase {
+	display: inline-flex;
+	
+
+}
+
+.purchase__button {
+	width: 50px;
+	height: 50px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	transition-duration: 0.3s;
+	
+}
+
+.header__bottom {
+	padding: 18px 0;
+	background: #fff;
+}
+
+/* Спеціальні пропозиції */
+.header__sale-nav {
+	display: flex;
+	column-gap: 40px;
+	flex-wrap: wrap;
+}
+
+.header__sale-nav img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+.nav__link--large {
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 1.26;
+}
+
+/* Навігація по кімнатам */
+.header__room-nav {
+	display: inline-flex;
+column-gap: 40px;
+	flex-wrap: wrap;
+	
+}
+
+/* =================main=========================================================== */
+.page {
+}
+
+.page__container {
+}
+
+.page__content {
+}
+
+/* Популярні категорії */
+.popular-categories {
+	padding-top: 30px;
+}
+
+.popular-categories__title {
+	margin-bottom: 40px;
+}
+
+.title {
+	font-size: 40px;
+	line-height: 1.2; /* 48/40 */
+	display: flex;
+	column-gap: 30px;
+}
+
+.popular-categories__card {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 10px;
+	row-gap: 24px;
+}
+
+.categories-card {
+}
+
+.categories-card__item {
+	font-size: 20px;
+	line-height: 1.4; /* 28/20 */
+	flex: 1 0 250px;
+	min-height: 300px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: clip;
+	transition-duration: 0.3s;
+}
+
+[class*="card__item"]:hover {
+	transform: scale(1.05);
+	z-index: 5;
+}
+
+.categories-card__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.categories-card__link::before {
+	content: "";
+	width: 115%;
+	height: 95%;
+	background-color: #f8f8f8;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -34%;
+	left: -6%;
+}
+
+.categories-card__link::after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: url("../img/main/icon/arrow.svg") 0 0 / 100% 100% no-repeat;
+	position: absolute;
+	bottom: 6.67%; /* 20/300 */
+	right: 8%; /* 20/250 */
+	z-index: 6;
+	visibility: hidden;
+	transition-duration: 0.2s;
+}
+
+.categories-card__link:hover:after {
+	visibility: visible;
+}
+
+.categories-card__box-text {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.categories-card__name {
+	max-width: 70%;
+}
+
+.categories-card__number {
+	color: #b1b1b1;
+}
+
+.categories-card__image {
+	width: 250px;
+	height: 300px;
+	flex-shrink: 0;
+	position: absolute;
+	left: auto;
+	bottom: 0px;
+	z-index: 2;
+}
+
+/* Популярні товари */
+.goods-popular {
+	padding-top: 70px;
+}
+
+.goods-popular__title {
+	margin-bottom: 40px;
+}
+
+.title__link {
+	color: #ffbc57;
+	font-size: 19px;
+	line-height: 1.26; /* 24/19 */
+	align-self: center;
+}
+
+.title__link::after {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../img/main/icon/title-arrow.svg") 0 0 / 100% 100% no-repeat;
+	vertical-align: sub;
+	margin-left: 10px;
+	transition-duration: 0.3s;
+}
+
+.title__link:hover::after {
+	transform: scale(1.2) rotate(90deg);
+}
+
+.goods-popular__card {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.product-card {
+}
+
+.product-card__item {
+	display: flex;
+	flex: 1 0 300px;
+	min-height: 468px;
+	flex-direction: column;
+	padding: 20px;
+	row-gap: 20px;
+	border-radius: 8px;
+	border: 1px solid #e3e2e2;
+	background: #fff;
+	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+	overflow: clip;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition-duration: 0.3s;
+}
+
+
+.product-card__image {
+	width: 260px;
+	height: 220px;
+	display: flex;
+	align-items: center;
+	overflow: clip;
+	border-radius: 8px;
+	margin: 0 auto;
+}
+
+.product-card__link {
+}
+
+.product-card__box-text {
+	width: 86%;
+	display: inline-flex;
+	flex-direction: column;
+	row-gap: 10px;
+	flex-grow: 1;
+}
+
+.product-card__text {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.69; /* 22/13 */
+}
+
+.product-card__text--grey {
+	color: #535353;
+}
+
+.product-card__text--decor::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../img/main/icon/check.svg") 0 0 / 100% 100% no-repeat;
+	vertical-align: middle;
+}
+
+.product-card__name {
+	font-size: 19px;
+	line-height: 1.26; /* 24/19 */
+	flex-wrap: wrap;
+	transition-duration: 0.3s;
+}
+
+.product-card__name:hover {
+	color: #ffbc57;
+}
+
+.product-card__buy {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.product-card__text-price {
+
+}
+
+.product-card__old-price {
+color: #E03D3D;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.46; /* 22/15 */
+text-decoration-line: line-through;
+}
+
+.product-card__new-price {
+font-size: 20px;
+line-height: 1.4; /* 28/20 */
+
+}
+
+.product-card__purchase-buttons {
+	column-gap: 10px;
+}
+
+.purchase {
+	
+}
+
+.purchase__button {
+}
+
+/* Акції */
+.sale {
+	padding-top: 86px;
+	padding-bottom: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.sale__title {
+	margin-bottom: 46px;
+	flex:0 1 50%;
+}
+
+.sale__box-buttons {
+	display: inline-flex;
+	gap: 20px;
+	flex: 0 1 50%;
+	justify-content: end;
+	
+}
+
+.sale__button {
+	width: 60px;
+	height: 60px;
+	flex-shrink: 0;
+	border-radius: 50%;
+}
+
+.sale__banner-box {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+
+}
+
+.sale__banner-link {
+	max-width: 410px;
+	height: 280px;
+	overflow: clip;
+	border-radius: 8px;
+	
+}
+
+.sale__banner-link img {
+	transition-duration: 0.3s;
+}
+
+.sale__banner-link:hover img{
+transform: scale(1.1);
+}
