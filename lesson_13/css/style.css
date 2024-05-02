@@ -53,7 +53,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
- row-gap:10px;
 
 }
 .header__content--wrap {
@@ -101,7 +100,7 @@ body {
 .header__help-messenger {
 	display: inline-flex;
 	align-items: center;
-	column-gap: 20px;
+	gap: 20px;
 	flex-wrap: wrap;
 }
 
@@ -113,7 +112,7 @@ body {
 
 .header__help-nav {
 	display:flex;
-	column-gap: 10px;
+	gap: 10px;
 }
 
 .nav__item--border-radius {
@@ -285,7 +284,7 @@ body {
 /* Спеціальні пропозиції */
 .header__sale-nav {
 	display: flex;
-	column-gap: 40px;
+	gap: 40px;
 	flex-wrap: wrap;
 }
 
@@ -304,7 +303,7 @@ body {
 /* Навігація по кімнатам */
 .header__room-nav {
 	display: inline-flex;
-column-gap: 40px;
+ gap: 40px;
 	flex-wrap: wrap;
 	
 }
