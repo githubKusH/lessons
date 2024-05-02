@@ -53,6 +53,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+ row-gap:10px;
 
 }
 .header__content--wrap {
@@ -160,8 +161,6 @@ body {
 	padding: 25px 0;
 	background: #fff;
 	border-bottom: 2px solid #f8f8f8;
- display: flex;
- row-gap:10px;
 
 }
 
