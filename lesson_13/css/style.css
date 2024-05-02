@@ -29,9 +29,7 @@ body {
 	font-family:"ProximaNova", sans-serif;
 	font-weight: 600;
 	color: #2b2929;
-	background-color: #f8f8f8;
-
-	
+	background-color: #f8f8f8;	
 }
 
  img {
@@ -65,7 +63,7 @@ body {
 .header__info-nav {
 	display: flex;
 	column-gap: 20px;
-	flex-basis: 70%;
+	flex-basis: 66%;
 	flex-wrap: wrap;
 	margin-right: 10px;
 }
