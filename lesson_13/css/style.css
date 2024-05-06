@@ -61,7 +61,6 @@ img {
 	column-gap: 20px;
 	flex-basis: 66%;
 	flex-wrap: wrap;
-	margin-right: 10px;
 }
 
 .nav {
@@ -69,7 +68,6 @@ img {
 
 .nav__item {
 	transition-duration: 0.3s;
-	display: inline-flex;
 	/* flex-shrink: 0; */
 }
 
@@ -274,6 +272,7 @@ img {
 	display: flex;
 	column-gap: 40px;
 	flex-wrap: wrap;
+	row-gap: 10px;
 }
 
 .header__sale-nav img {
@@ -294,6 +293,7 @@ img {
 	display: flex;
 	column-gap: 40px;
 	flex-wrap: wrap;
+	row-gap: 10px;
 }
 
 /* =================main=========================================================== */
@@ -338,14 +338,12 @@ margin-bottom: 40px;
 .categories-card__item {
 	font-size: 20px;
 	line-height: 1.4; /* 28/20 */
-	flex: 1 0 250px;
+	flex: 0 0 250px;
 	min-height: 300px;
 	border-radius: 8px;
 	background: #fff;
 	box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
 	position: relative;
-	top: 0;
-	left: 0;
 	overflow: clip;
 	transition-duration: 0.3s;
 }
@@ -395,9 +393,8 @@ margin-bottom: 40px;
 	justify-content: space-between;
 	padding: 20px 20px;
 	position: relative;
-	top: 0;
-	left: 0;
 	z-index: 5;
+	row-gap: 10px;
 }
 
 .categories-card__name {
@@ -409,9 +406,6 @@ margin-bottom: 40px;
 }
 
 .categories-card__image {
-	width: 250px;
-	height: 300px;
-	flex-shrink: 0;
 	position: absolute;
 	left: auto;
 	bottom: 0px;
@@ -461,7 +455,7 @@ margin-bottom: 40px;
 
 .product-card__item {
 	display: flex;
-	flex: 1 0 300px;
+	flex: 0 0 300px;
 	flex-direction: column;
 	padding: 20px;
 	row-gap: 20px;
@@ -477,20 +471,14 @@ margin-bottom: 40px;
 }
 
 .product-card__image {
-	width: 260px;
-	height: 220px;
-	display: flex;
-	align-items: center;
-	overflow: clip;
-	border-radius: 8px;
-	margin: 0 auto;
+	
+	
 }
 
 .product-card__link {
 }
 
 .product-card__box-text {
-	width: 86%;
 	display: inline-flex;
 	flex-direction: column;
 	row-gap: 10px;
