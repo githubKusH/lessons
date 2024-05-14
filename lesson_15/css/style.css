@@ -330,7 +330,7 @@ body {
 	}
 
 	.contacts-middle-header:hover::before {
-		scale: 1.1;
+		transform: scale(1.1);
 	}
 
 }
@@ -362,7 +362,7 @@ body {
 
 @media (any-hover: hover) {
 	.middle-header__action-link:hover {
-		scale: 1.1;
+		transform: scale(1.1);
 		background-color: #FFBC57;
 	}
 }
