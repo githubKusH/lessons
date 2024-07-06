@@ -387,7 +387,6 @@ body * {
 	padding: 80px 0px;
 
 	@media (max-width:514.8px) {
-		flex-wrap: wrap;
 		padding: 20px 0px;
 
 	}
@@ -418,16 +417,26 @@ body * {
 	&__container {
 		display: flex;
 		column-gap: 100px;
+
+		@media (max-width:514.8px) {
+			flex-direction: column;
+
+		}
 	}
 
 	// .collections-section__body
 
 	&__body {
+		flex-basis: 682px;
 		color: #000;
 		font-family: "Roboto";
-		flex-basis: 682px;
 		padding-top: clamp(10px, calc(10px + (150 - 10) * ((100vw - 350px) / (1350 - 350))), 150px);
 		padding-bottom: clamp(10px, calc(10px + (184 - 10) * ((100vw - 350px) / (1350 - 350))), 184px);
+
+		@media (max-width:514.8px) {
+			flex-basis: 0;
+
+		}
 	}
 
 	// .collections-section__title
@@ -474,7 +483,7 @@ body * {
 
 	&__image {
 		border: 2px solid rgba(0, 0, 0, 0.25);
-		border-radius: 160px 0px;
+		border-radius: 37% 0;
 		align-self: flex-start;
 		position: relative;
 		z-index: 1;
@@ -487,7 +496,7 @@ body * {
 
 
 		img {
-			border-radius: 160px 0px 150px 0px;
+			border-radius: 37% 0;
 			aspect-ratio: 424/542;
 			width: 100%;
 			object-fit: contain;
@@ -680,7 +689,7 @@ body * {
 }
 
 .grid-product {
-
+	padding: 30px 0px;
 
 	// .grid-product__container
 
@@ -688,7 +697,7 @@ body * {
 		display: flex;
 		flex-direction: column;
 		gap: 35px;
-		padding: 30px 0px;
+
 
 
 		@media (min-width:514.8px) {
@@ -911,6 +920,7 @@ body * {
 		left: 0;
 		z-index: 2;
 	}
+
 }
 
 .price-product {
@@ -1052,7 +1062,8 @@ body * {
 }
 
 .slider-product {
-
+	padding: 30px 0px;
+	position: relative;
 	// .slider-product__container
 
 	&__container {
@@ -1060,7 +1071,7 @@ body * {
 		flex-direction: column;
 		gap: 35px;
 		position: relative;
-		padding: 30px 0px;
+
 
 		@media (min-width:514.8px) {
 			padding: 140px 0px;
@@ -1080,11 +1091,28 @@ body * {
 		column-gap: 24px;
 		overflow-x: auto;
 	}
+
+	&__button-arrow-left {
+		left: 10px;
+	}
+
+	&__button-arrow-right {
+		right: 10px;
+	}
+}
+
+.arrow-button {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
 }
 
 
 .social-instagram {
-
+	position: relative;
 	background: rgba(30, 40, 50, 0.05);
 	padding: 30px 0px;
 
@@ -1107,16 +1135,16 @@ body * {
 
 	&__card {
 		display: flex;
-		
 		gap: 24px;
 		padding-bottom: 70px;
 		overflow-x: auto;
-		
+
 	}
 
 	// .social-instagram__subscription-news
 
 	&__subscription-news {}
+
 }
 
 .instagram-card {
