@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Мова контенту -->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення сss -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- заголовок в браузері -->
+	<title>Lesson 20</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="burger">
+					<div class="burger__container"></div>
+				</div>
+				<button type="button" class="menu-icon ">
+					<span></span>
+				</button>
+				<h1 class="header__label">
+					SHOP.CO
+				</h1>
+				<ul class="header__menu menu-header" data-da=".burger__container, 951.8">
+					<li class="menu-header__item">
+						<a href="#" class="menu-header__link">Shop</a>
+						<button class="menu-header__button" type="button">
+							<img src="img/icon/arrow.svg" alt="Icon">
+						</button>
+					</li>
+					<li class="menu-header__item">
+						<a href="#" class="menu-header__link">On Sale</a>
+					</li>
+					<li class="menu-header__item">
+						<a href="#" class="menu-header__link">New Arrivals</a>
+					</li>
+					<li class="menu-header__item">
+						<a href="#" class="menu-header__link">Brands</a>
+					</li>
+				</ul>
+				<form class="header__search search" method="GET" enctype="multipart/form-data" action="#">
+					<button class="search__button " type="submit">
+						<img src="img/icon/search.svg" alt="icon">
+					</button>
+					<input class="search__input" type="search" placeholder="Search for products...">
+				</form>
+				<div class="header__actions actions-header">
+					<button class="actions-header__button actions-header__button--none" type="submit">
+						<img src="img/icon/search-mobile.svg" alt="icon">
+					</button>
+					<button class="actions-header__button">
+						<img src="img/icon/basket.svg" alt="icon">
+					</button>
+					<button class="actions-header__button">
+						<img src="img/icon/acсount.svg" alt="icon">
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__banner banner-page">
+				<div class="banner-page__container">
+					<div class="banner-page__body">
+						<h2 class="banner-page__title">
+							FIND CLOTHES THAT MATCHES YOUR STYLE
+						</h2>
+						<p class="banner-page__text">
+							Browse through our diverse range of meticulously crafted garments, designed to bring out your
+							individuality and cater to your sense of style.
+						</p>
+						<button class="banner-page__button" type="button">
+							<span> Shop Now </span>
+						</button>
+						<div class="banner-page__bottom bottom-banner-page">
+							<div class="bottom-banner-page__info">
+								<p>200+</p>
+								<span>International Brands</span>
+							</div>
+							<div class="bottom-banner-page__info">
+								<p>2,000+</p>
+								<span>High-Quality Products</span>
+							</div>
+							<div class="bottom-banner-page__info">
+								<p>30,000+</p>
+								<span>Happy Customers</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-page__image">
+						<img src="img/banner-image.jpg" alt="Image">
+					</div>
+				</div>
+			</section>
+			<aside class="page__brands brands">
+				<div class="brands__container">
+					<div class="brands__image">
+						<img src="img/brand-1.png" alt="Image">
+					</div>
+					<div class="brands__image">
+						<img src="img/brand-2.png" alt="Image">
+					</div>
+					<div class="brands__image">
+						<img src="img/brand-3.png" alt="Image">
+					</div>
+					<div class="brands__image">
+						<img src="img/brand-4.png" alt="Image">
+					</div>
+					<div class="brands__image">
+						<img src="img/brand-5.png" alt="Image">
+					</div>
+				</div>
+			</aside>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/dynamic_adapt.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+
+</html>
