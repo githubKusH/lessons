@@ -533,7 +533,7 @@ input[type=search]::-webkit-search-decoration {
 }
 .brands__image {
   width: clamp(4.375rem, 2.354rem + 10.11vw, 10.375rem);
-  height: 2.0625rem;
+  height: clamp(1.063rem, 0.726rem + 1.68vw, 2.063rem);
 }
 .brands__image img {
   width: 100%;
