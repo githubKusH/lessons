@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Мова контенту -->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення сss -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- заголовок в браузері -->
+	<title>Lesson 21</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Задачі до уроку JavaScript</h1>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__blok-task task-blok">
+					<h2 class="task-blok__title">Задача №1</h2>
+					<p class="task-blok__question">Яка назва змінної вірна</p>
+					<ol class="task-blok__items">
+						<li class="task-blok__item">
+							let user-name
+						</li>
+						<li class="task-blok__item">
+							let UserName
+						</li>
+						<li class="task-blok__item">
+							let userName
+						</li>
+					</ol>
+					<p class="task-blok__answer">
+						<span>Відповідь:</span>
+						let userName ,тому що стиль написання змінної "lowerCamelCase"
+					</p>
+				</div>
+				<div class="page__blok-task task-blok">
+					<h2 class="task-blok__title">Задача №2</h2>
+					<p class="task-blok__question">Чи буде помилка при виконанні наступної програми?</p>
+					<div class="task-blok__body">
+						<p>const userName = 20</p>
+						<p>userName = "Іштван"</p>
+					</div>
+					<p class="task-blok__answer">
+						<span>Відповідь:</span>
+						Так, при використанні константи її не можна змінити.
+					</p>
+				</div>
+				<div class="page__blok-task task-blok">
+					<h2 class="task-blok__title">Задача №3</h2>
+					<p class="task-blok__question">Що потрапить в консоль?</p>
+					<div class="task-blok__body">
+						<p>let numOne = 20</p>
+						<p>let numTwo = "20"</p>
+						<p>let numSumm = numOne + numTwo
+							console.log(numSumm)</p>
+					</div>
+					<p class="task-blok__answer">
+						<span>Відповідь:</span>
+						2020, оператор додавання в цьому випадку переведе число в рядок і додасть два рядки
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+
+</html>
