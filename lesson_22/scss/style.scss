@@ -1,0 +1,101 @@
+@use "sass:math";
+
+
+/* Підключення шрифтів */
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+//Percent
+@function percent($px, $from: 100) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+
+//REM
+@function toRem($px, $current: 16) {
+	$result: math.div($px, $current) + rem;
+	@return $result;
+}
+
+//EM
+@function toEm($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+body {
+	background-color: rgb(197, 174, 141);
+}
+.wrapper {
+	min-height: percent(100);
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1270);
+	padding: 0 toRem(15);
+	margin: 0px auto;
+}
+
+.header {
+
+	// .header__container
+
+	&__container {}
+
+	text-align: center;
+	margin-bottom: toRem(20);
+	// .header__title
+
+	&__title {
+		font-size: toRem(60);
+		font-weight: 600;
+	}
+}
+
+.page {
+
+		// .page__container
+
+		&__container {
+			padding: toRem(30) 0;
+			display: flex;
+			flex-direction: column;
+			row-gap: toRem(20);
+		}
+}
+.task {
+	border-radius: toRem(20);
+	border: toRem(3) solid;
+	padding: toRem(20);
+	display: flex;
+	flex-direction: column;
+	row-gap: toRem(20);
+	font-size: toRem(18);
+		// .task__number
+
+		&__number {
+			font-size: toRem(36);
+		}
+
+		// .task__question
+
+		&__question {
+			font-size: toRem(24);
+		}
+
+		// .task__answer
+
+		&__answer {
+			color: brown;
+		}
+}
+.footer {
+}
