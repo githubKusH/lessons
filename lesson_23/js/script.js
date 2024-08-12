@@ -386,7 +386,7 @@ function scrollToBlock(element) {
 
 //Задача №6
 const link = document.querySelector(`.link`)
-const color = +link.dataset.color
+const value = +link.dataset.value
 console.log(color);
 
 if (color < 200) {
