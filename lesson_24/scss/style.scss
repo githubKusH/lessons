@@ -1,0 +1,156 @@
+@use "sass:math";
+
+
+/* Підключення шрифтів */
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+//Percent
+@function percent($px, $from: 100) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+
+//REM
+@function toRem($px, $current: 16) {
+	$result: math.div($px, $current) + rem;
+	@return $result;
+}
+
+//EM
+@function toEm($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(197, 174, 141);
+	opacity: 0;
+	&.loaded {
+		opacity: 1;
+		transition: opacity 1s;
+	}
+}
+.wrapper {
+	min-height: percent(100);
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: toRem(1270);
+	padding: 0 toRem(15);
+	margin: 0px auto;
+}
+
+.header {
+
+	// .header__container
+
+	&__container {}
+
+	text-align: center;
+	margin-bottom: toRem(20);
+	// .header__title
+
+	&__title {
+		font-size: toRem(60);
+		font-weight: 600;
+	}
+}
+
+.page {
+
+		// .page__container
+
+		&__container {
+			padding: toRem(30) 0;
+			display: flex;
+			flex-direction: column;
+			row-gap: toRem(20);
+		}
+}
+.task {
+	border-radius: toRem(20);
+	border: toRem(3) solid;
+	padding: toRem(20);
+	display: flex;
+	flex-direction: column;
+	row-gap: toRem(20);
+	
+		// .task__number
+
+		&__number {
+			font-size: toRem(36);
+		}
+
+		// .task__question
+
+		&__question {
+			font-size: toRem(24);
+		}
+
+		// .task__answer
+
+		&__answer {
+			color: brown;
+		}
+}
+
+.active {
+	font-size: toRem(20);
+	font-weight: 900;
+	color: red;
+}
+
+// @keyframes animate {
+// 	0% {
+// 		opacity: 0;
+// 		transform: rotate(30deg) translate(0, 30%);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		transform: rotate(0deg) translate(0, 0%);
+// 	}
+// }
+
+.items {
+	cursor: pointer;
+	font-size: toRem(20);
+}
+	.item {
+		width: toRem(200);
+		height: toRem(200);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: toEm(50);
+		color: rgb(0, 0, 0);
+		background-color: chocolate;
+	
+		
+		opacity: 0;
+		transform: translate(-100%, 0px);
+		transition: all 1s;
+	
+		&.animate {
+			opacity: 1;
+			transform: translate(0%, 0px);
+		}
+	}
+
+
+.footer {
+	height: toRem(200);
+}
